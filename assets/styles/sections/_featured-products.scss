@@ -1,0 +1,20 @@
+.featured-products {
+  padding: 80px 0;
+  @media (max-width: 991px) {
+    padding: 20px 0 95px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+      flex-direction: column;
+    }
+  }
+  &__single {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}

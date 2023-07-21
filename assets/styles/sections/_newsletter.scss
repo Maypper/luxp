@@ -1,0 +1,77 @@
+.newsletter {
+  padding: 40px 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 650px;
+    .wpcf7 {
+      width: 100%;
+    }
+    p {
+      margin-bottom: 70px;
+      text-align: center;
+      @media (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+    }
+    h3 {
+      text-align: center;
+      @media (max-width: 991px) {
+        font-size: 26px;
+      }
+    }
+    form {
+      .newsletter-field {
+        position: relative;
+        input {
+          border-bottom: 1px solid $black-color;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          padding: 16px;
+          color: #858585;
+          font-size: 14px;
+          font-family: 'Avenir Next Cyr', sans-serif;
+          border-radius: 0;
+          outline: none;
+          width: 100%;
+        }
+        .submit {
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          right: 16px;
+          top: 50%;
+          transform: translateY(-50%);
+          &::before {
+            content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9InBlcGljb25zLXBlbmNpbDphcnJvdy11cCI+CjxnIGlkPSJHcm91cCI+CjxwYXRoIGlkPSJWZWN0b3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuMTgzOSA3LjAxOTc1QzE0LjMxMTIgNi45MTM3MSAxNC40NzU1IDYuODYyNTcgMTQuNjQwNSA2Ljg3NzU3QzE0LjgwNTUgNi44OTI1NyAxNC45NTc4IDYuOTcyNDkgMTUuMDYzOSA3LjA5OTc1TDE5LjIzMDIgMTIuMDk5N0MxOS4yODUgMTIuMTYyNSAxOS4zMjY4IDEyLjIzNTUgMTkuMzUzIDEyLjMxNDZDMTkuMzc5MiAxMi4zOTM4IDE5LjM4OTQgMTIuNDc3MyAxOS4zODI4IDEyLjU2MDRDMTkuMzc2MyAxMi42NDM1IDE5LjM1MzIgMTIuNzI0NCAxOS4zMTQ5IDEyLjc5ODRDMTkuMjc2NiAxMi44NzI0IDE5LjIyMzkgMTIuOTM4MSAxOS4xNTk5IDEyLjk5MTRDMTkuMDk1OSAxMy4wNDQ4IDE5LjAyMTggMTMuMDg0OCAxOC45NDIxIDEzLjEwOTFDMTguODYyNCAxMy4xMzM0IDE4Ljc3ODYgMTMuMTQxNSAxOC42OTU3IDEzLjEzM0MxOC42MTI4IDEzLjEyNDQgMTguNTMyNSAxMy4wOTk0IDE4LjQ1OTQgMTMuMDU5NEMxOC4zODYzIDEzLjAxOTMgMTguMzIyIDEyLjk2NSAxOC4yNzAyIDEyLjg5OTdMMTQuMTAzOSA3Ljg5OTc1QzEzLjk5NzkgNy43NzI0MiAxMy45NDY3IDcuNjA4MiAxMy45NjE3IDcuNDQzMTlDMTMuOTc2NyA3LjI3ODE3IDE0LjA1NjcgNy4xMjU4NiAxNC4xODM5IDcuMDE5NzVaIiBmaWxsPSIjM0YzRjNGIi8+CjxwYXRoIGlkPSJWZWN0b3JfMiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC4xODM5IDE3Ljk3OThDMTQuMDU2NyAxNy44NzM3IDEzLjk3NjcgMTcuNzIxNCAxMy45NjE3IDE3LjU1NjRDMTMuOTQ2NyAxNy4zOTEzIDEzLjk5NzkgMTcuMjI3MSAxNC4xMDM5IDE3LjA5OThMMTguMjcwMiAxMi4wOTk4QzE4LjMyMiAxMi4wMzQ1IDE4LjM4NjMgMTEuOTgwMyAxOC40NTk0IDExLjk0MDJDMTguNTMyNSAxMS45MDAxIDE4LjYxMjggMTEuODc1MSAxOC42OTU3IDExLjg2NjZDMTguNzc4NiAxMS44NTggMTguODYyNCAxMS44NjYyIDE4Ljk0MjEgMTEuODkwNUMxOS4wMjE4IDExLjkxNDggMTkuMDk1OSAxMS45NTQ4IDE5LjE1OTkgMTIuMDA4MUMxOS4yMjM5IDEyLjA2MTUgMTkuMjc2NiAxMi4xMjcxIDE5LjMxNDkgMTIuMjAxMUMxOS4zNTMyIDEyLjI3NTIgMTkuMzc2MyAxMi4zNTYxIDE5LjM4MjggMTIuNDM5MkMxOS4zODk0IDEyLjUyMjMgMTkuMzc5MiAxMi42MDU4IDE5LjM1MyAxMi42ODQ5QzE5LjMyNjggMTIuNzY0IDE5LjI4NSAxMi44MzcxIDE5LjIzMDIgMTIuODk5OEwxNS4wNjM5IDE3Ljg5OThDMTQuOTU3OCAxOC4wMjcxIDE0LjgwNTUgMTguMTA3IDE0LjY0MDUgMTguMTIyQzE0LjQ3NTUgMTguMTM3IDE0LjMxMTIgMTguMDg1OCAxNC4xODM5IDE3Ljk3OThaIiBmaWxsPSIjM0YzRjNGIi8+CjxwYXRoIGlkPSJWZWN0b3JfMyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOC43NSAxMi41QzE4Ljc1IDEyLjY2NTggMTguNjg0MiAxMi44MjQ3IDE4LjU2NjkgMTIuOTQxOUMxOC40NDk3IDEzLjA1OTIgMTguMjkwOCAxMy4xMjUgMTguMTI1IDEzLjEyNUw2LjI1IDEzLjEyNUM2LjA4NDI0IDEzLjEyNSA1LjkyNTI3IDEzLjA1OTIgNS44MDgwNiAxMi45NDE5QzUuNjkwODUgMTIuODI0NyA1LjYyNSAxMi42NjU4IDUuNjI1IDEyLjVDNS42MjUgMTIuMzM0MiA1LjY5MDg1IDEyLjE3NTMgNS44MDgwNiAxMi4wNTgxQzUuOTI1MjcgMTEuOTQwOCA2LjA4NDI0IDExLjg3NSA2LjI1IDExLjg3NUwxOC4xMjUgMTEuODc1QzE4LjI5MDggMTEuODc1IDE4LjQ0OTcgMTEuOTQwOCAxOC41NjY5IDEyLjA1ODFDMTguNjg0MiAxMi4xNzUzIDE4Ljc1IDEyLjMzNDIgMTguNzUgMTIuNVoiIGZpbGw9IiMzRjNGM0YiLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=");
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25px;
+            height: 25px;
+          }
+          input[type=submit] {
+            background-color: transparent;
+            border-bottom: none;
+            width: 25px;
+            height: 25px;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+          }
+        }
+      }
+      .hidden-fields p {
+        display: none;
+      }
+    }
+  }
+}

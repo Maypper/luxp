@@ -1,0 +1,130 @@
+.footer {
+  padding: 60px 0 48px;
+  background-color: $main-color;
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 120px;
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    &--custom {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      @media (max-width: 991px) {
+        align-items: center;
+        margin-bottom: 47px;
+      }
+      h5 {
+        margin-bottom: 50px;
+        @media (max-width: 991px) {
+          margin-bottom: 16px;
+          text-align: center;
+        }
+      }
+      p {
+        color: $text-color;
+        margin-bottom: 40px;
+        @media (max-width: 991px) {
+          margin-bottom: 16px;
+          text-align: center;
+          padding: 0 15px;
+        }
+      }
+    }
+    &--social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 50px;
+      @media (max-width: 991px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+
+      }
+      & > li {
+        @media (max-width: 991px) {
+          margin-bottom: 55px;
+        }
+        & > a {
+          font-size: 18px;
+          font-family: 'Americana Std',sans-serif;
+          text-transform: capitalize;
+          color: $black-color;
+          text-decoration: none;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+      .sub-menu {
+        list-style: none;
+        padding: 0;
+        margin: 24px 0 0;
+        li {
+          margin-bottom: 12px;
+          a {
+            font-size: 14px;
+            font-family: 'Avenir Next Cyr', sans-serif;
+            font-weight: 450;
+            line-height: 140%;
+            color: $text-color;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+    align-items: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media (max-width: 575px) {
+      max-width: 290px;
+      margin: 0 auto;
+    }
+    &--links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      @media (max-width: 991px) {
+        flex-direction: column-reverse;
+        gap: 16px;
+        align-items: center;
+      }
+      a, span {
+        color: $text-color;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 12px;
+        font-family: 'Avenir Next Cyr', sans-serif;
+        font-weight: 300;
+      }
+    }
+    &--icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      @media (max-width: 991px) {
+        justify-content: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}

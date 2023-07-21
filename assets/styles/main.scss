@@ -1,0 +1,22 @@
+// import global styles
+@import "global/global-and-buttons";
+@import "global/fonts";
+@import "global/typography";
+@import "global/containers";
+@import "global/shop-cards";
+@import "global/header";
+@import "global/footer";
+
+// import sections styles
+@import "sections/home-hero";
+@import "sections/categories";
+@import "sections/featured-products";
+@import "sections/text-steps";
+@import "sections/full-slider";
+@import "sections/text-video";
+@import "sections/featured-posts";
+@import "sections/newsletter";
+
+// import page styles
+@import "pages/collections";
+@import "pages/product";

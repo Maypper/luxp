@@ -1,0 +1,153 @@
+ .home-hero {
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+   background: linear-gradient(0deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.46));
+   padding: 70px 0 25px;
+   z-index: 101;
+   &__wrapper {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
+   &__bottom {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   video {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 100%;
+     z-index: -1;
+     object-fit: cover;
+     transform: translate(-50%, -50%);
+     height: 100%;
+   }
+   .scroll-down {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: 'Avenir Next Cyr', sans-serif;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 10px;
+     line-height: 12px;
+     text-align: center;
+     color: #858585;
+     text-decoration: none;
+     margin-top: 56px;
+     .animated-svg {
+       position: relative;
+       margin-top: 10px;
+       white-space: normal;
+       .main-svg {
+         rect {
+           background: rgba(255, 255, 255, 0.1);
+         }
+       }
+       .dot-svg {
+         position: absolute;
+         left: 50%;
+         top: 9px;
+         transform: translateX(-50%);
+         animation-name: animated-dot;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+       }
+     }
+     .animated-svg-hand {
+       position: relative;
+       margin-top: 10px;
+       white-space: normal;
+       .main-svg {
+         animation-name: animated-svg-hand;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+       }
+       .arrow-svg {
+         position: absolute;
+         top: 5px;
+         left: 2px;
+         animation-name: animated-svg-arrow;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+       }
+     }
+   }
+   h1 {
+     text-align: center;
+     text-transform: uppercase;
+     @media (max-width: 991px) {
+       margin: auto 0;
+     }
+   }
+   p {
+     text-align: center;
+     max-width: 540px;
+   }
+ }
+ @keyframes animated-dot {
+   0%   {
+     top: 9px;
+   }
+   50% {
+     top: 9px;
+   }
+   70%  {
+     top: calc(100% + 1px);
+   }
+   70.99% {
+     opacity: 1;
+   }
+   71% {
+     top: 100%;
+     opacity: 0;
+   }
+   77%  {
+     top: 0;
+   }
+   86.99% {
+     opacity: 0;
+   }
+   87% {
+     top: 0;
+     opacity: 1;
+   }
+   87.5% {
+     top: -1px;
+   }
+   100% {
+     top: 9px;
+   }
+ }
+ @keyframes animated-svg-hand {
+   0% {
+     transform: rotate(0);
+   }
+   50% {
+     transform: rotate(0);
+   }
+   75% {
+     transform: rotate(30deg);
+   }
+   100% {
+     transform: rotate(0);
+   }
+ }
+ @keyframes animated-svg-arrow {
+   0% {
+     top: 5px;
+   }
+   50% {
+     top: 5px;
+   }
+   75% {
+     top: 17px;
+   }
+   100% {
+     top: 5px;
+   }
+ }
